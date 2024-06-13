@@ -1,0 +1,30 @@
+.services{
+    background-image: var(--second-gradient);
+}
+.services__subtitle{
+    color: var(--bg-color);
+    font-size: var(--2-font-size);
+    font-weight: 700;
+    margin-bottom: 65px;
+    display: block;
+}
+.services__title{
+    font-size: var(--h4-font-size);
+    margin-bottom: 15px;
+}
+.services__description{
+    min-height: 175px;
+    margin-bottom: 20px;
+}
+.swiper-wrapper{
+    margin-bottom: 52px;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active {
+   background-color: var(--primary-color);
+}
+.services__item{
+    background-image: url('../../assets/project5.jpg');
+    background-repeat: no-repeat;
+    background: cover;
+    background-position: center;
+}
