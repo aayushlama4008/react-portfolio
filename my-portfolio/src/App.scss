@@ -11,7 +11,7 @@
 :root {
   // COLORS
 
-  --primary-color: #29a385;
+  --primary-color: #2e6de2;
   --title-color: #ffffff;
   --text-color: #ebebeb;
   --bg-color: #212730;
@@ -149,6 +149,10 @@ img{
     padding-inline: 12px;
 }
 
+.grid{
+    display: grid;
+    gap: 24px;
+}
 .text-cs{
     text-transform: uppercase; 
     letter-spacing: 0.05rem;

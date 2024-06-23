@@ -10,6 +10,16 @@ import { motion } from "framer-motion";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Home = () => {
+  const filePath = "../../../public/AayushLamaResume.pdf";
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+        link.href = filePath;
+        link.download = 'AayushLamaResume.pdf'; 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+  }
   return (
     <section className="home" id="home">
       <motion.div
@@ -30,10 +40,11 @@ const Home = () => {
           <div className="home__banner">
             <img src={""} alt="" className="home__profile" />
           </div>
-          <motion.p 
-          whileInView={{ x: [-70, 0], opacity: [0.7, 1] }}
-          transition={{ duration: 1 }}
-          className="home__data home__data-one">
+          <motion.p
+            whileInView={{ x: [-70, 0], opacity: [0.7, 1] }}
+            transition={{ duration: 1 }}
+            className="home__data home__data-one"
+          >
             <span className="text-lg">
               1 <b>+ </b>
             </span>
@@ -41,10 +52,11 @@ const Home = () => {
               Years of <span>Experience</span>
             </span>
           </motion.p>
-          <motion.p 
-           whileInView={{ x: [70, 0], opacity: [0.7, 1] }}
-           transition={{ duration: 1 }}
-          className="home__data home__data-two">
+          <motion.p
+            whileInView={{ x: [70, 0], opacity: [0.7, 1] }}
+            transition={{ duration: 1 }}
+            className="home__data home__data-two"
+          >
             <span className="text-lg">3 </span>
             <span className="text-sm">
               Projects <span>Completed</span>
@@ -85,11 +97,11 @@ const Home = () => {
         </div>
 
         <div className="home__btns">
-          <a href="" className="btn text-cs">
+          <a href={filePath} className="btn text-cs" onClick={handleDownload} target="_blank">
             Download CV
           </a>
 
-          <a href="" className="hero__link text-cs">
+          <a href="" className="hero__link text-cs" >
             My Skills
           </a>
         </div>

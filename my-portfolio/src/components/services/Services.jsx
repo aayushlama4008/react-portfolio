@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <motion.section
       whileInView={{ y: [30, 0], opacity: [0, 1] }}
-      transition={{ duration: 1.5, type: "keyframes" }}
+      transition={{ duration: 0.7, type: "keyframes" }}
       className="services section"
     >
       <h2 className="section__title">What I do</h2>
