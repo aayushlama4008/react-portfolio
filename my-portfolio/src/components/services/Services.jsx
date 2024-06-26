@@ -45,7 +45,7 @@ const Services = () => {
         {services.map(({ name, title, description ,img}, index) => {
           return (
             <SwiperSlide className="services__item card-one card" key={index} 
-            style={{backgroundImage: `url(${img})`,backgroundSize:'cover',backgroundPosition:'center'}}
+            
             >
               <span className="services__subtitle text-cs">{name}</span>
               <h3 className="services__title">

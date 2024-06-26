@@ -17,6 +17,8 @@ import Testimonial3 from "../assets/testimonial3.jpg";
 import Testimonial4 from "../assets/testimonial4.jpg";
 import Testimonial5 from "../assets/testimonial5.jpg";
 
+import newProject1 from "../assets/Capture.JPG";  
+
 export const links = [
   {
     name: "Home",
@@ -159,11 +161,13 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    img: Project1,
-    category: "Branding",
-    title: "Zorro",
+    img: newProject1,
+    category: "E-commerce",
+    title: "Organic Store",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "The Organic Store E-commerce Platform is a secure, user-friendly web app for selling organic products, built with React, Node.js, JavaScript, and PostgreSQL. It features JWT-based user authentication, detailed product listings, an easy-to-use shopping cart, secure checkout, and order management. The responsive design ensures a seamless shopping experience across all devices.",
+      link:"https://aayushlama-organic-food-store.netlify.app",
+      githubLink: "https://github.com/aayushlama4008/organic-food-store.git"
   },
   {
     id: 2,

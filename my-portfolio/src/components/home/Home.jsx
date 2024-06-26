@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Home.scss";
 
-import profileImg from "../../assets/profile-img.png";
+import profileImg from "../../assets/profile-2.png";
 import shapeOne from "../../assets/shape-1.png";
 import shapeTwo from "../../assets/shape-2.png";
 
@@ -38,7 +38,7 @@ const Home = () => {
         </p>
         <div className="home__img-wrapper">
           <div className="home__banner">
-            <img src={""} alt="" className="home__profile" />
+            <img src={profileImg} alt="" className="home__profile" width={700} />
           </div>
           <motion.p
             whileInView={{ x: [-70, 0], opacity: [0.7, 1] }}
